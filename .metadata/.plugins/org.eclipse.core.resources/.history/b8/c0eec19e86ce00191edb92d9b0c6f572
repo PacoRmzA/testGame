@@ -1,0 +1,75 @@
+package com.TheCubicJedi.main;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class Player2KeyInput extends KeyAdapter{
+		
+		private Handler handler;
+		private boolean[] keyDown = new boolean[16];
+		HUD hud;
+		
+		public static final int WIDTH = 1280, HEIGHT = WIDTH/16*9;
+		
+		public Player2KeyInput(Handler handler, HUD hud) {
+			this.handler = handler;
+			this.hud = hud;
+			
+			keyDown[4]=false;
+			keyDown[5]=false;
+			keyDown[6]=false;
+			keyDown[7]=false;
+
+		}
+
+		public void keyPressed (KeyEvent e) {
+			int key  = e.getKeyCode();
+			boolean player2On = false;
+			
+			for(int i = 0; i < handler.object.size(); i++) {
+				
+				GameObject tempObject = handler.object.get(i);
+				
+				
+				if(tempObject.getID() == ID.Player2){
+					
+					if(key == KeyEvent.VK_I) {tempObject.setVelY(-10); keyDown[4] = true;}
+					if(key == KeyEvent.VK_J) {tempObject.setVelX(-10); keyDown[5] = true;}
+					if(key == KeyEvent.VK_K) {tempObject.setVelY(10); keyDown[6] = true;}
+					if(key == KeyEvent.VK_L) {tempObject.setVelX(10); keyDown[7] = true;}
+					
+					player2On = true;
+				}
+				
+			}
+			
+			if(!player2On) {
+				handler.addObject(new Player(WIDTH/2-32, HEIGHT/2-32, ID.Player, handler, hud));
+			}
+			
+		}
+		
+	public void keyReleased (KeyEvent e) {
+		int key  = e.getKeyCode();
+		
+		for(int i = 0; i < handler.object.size(); i++) {
+			
+			GameObject tempObject = handler.object.get(i);
+			
+		
+		if(tempObject.getID() == ID.Player2){
+			
+			if(key == KeyEvent.VK_I) keyDown[4]=false; //tempObject.setVelY(0);
+			if(key == KeyEvent.VK_J) keyDown[5]=false; //tempObject.setVelX(0);
+			if(key == KeyEvent.VK_K) keyDown[6]=false; //tempObject.setVelY(0);
+			if(key == KeyEvent.VK_L) keyDown[7]=false; //tempObject.setVelX(0);
+			
+			if(!keyDown[4] && !keyDown[6]) tempObject.setVelY(0);
+			if(!keyDown[5] && !keyDown[7]) tempObject.setVelX(0);
+			
+		}
+		
+		
+		}
+	}
+}

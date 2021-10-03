@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collections;;
 
 public class HUD {
-<<<<<<< HEAD
 	
 	private Handler handler;
 	
@@ -14,9 +13,6 @@ public class HUD {
 		this.handler = handler;
 	}
 	
-=======
-
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 	private static int SCOREp1 = 0;
 	private static int SCOREp2 = 0;
 	private static int SCOREp3 = 0;
@@ -48,10 +44,7 @@ public class HUD {
 		greenValue2 = SCOREp2;
 		greenValue3 = SCOREp3;
 		greenValue4 = SCOREp4;
-<<<<<<< HEAD
 		
-=======
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 	}
 	
 	public void render(Graphics g) {
@@ -95,7 +88,6 @@ public class HUD {
 		g.drawString("P3 Level: " + levelP3, 435, 80);
 		g.drawString("P4 Level: " + levelP4, 645, 80);
 		
-<<<<<<< HEAD
 		for(int i = 0; i < handler.object.size(); i++) {
 				
 				GameObject tempObject = handler.object.get(i);
@@ -115,9 +107,6 @@ public class HUD {
 		
 				}
 			}
-=======
-		
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 	}
 	
 	public int getScoreP1() {

@@ -12,17 +12,11 @@ public class Player extends GameObject{
 	Color color;
 	HUD hud;
 	Coin coin;
-<<<<<<< HEAD
 	public boolean parrying;
 	public int parryTimer = 5;
 	
 	public Player(float x, float y, ID id, Handler handler, HUD hud) {
 		super(x, y, id, handler, hud);
-=======
-	
-	public Player(float x, float y, ID id, Handler handler, HUD hud) {
-		super(x, y, id);
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 		this.handler = handler;
 		this.hud = hud;
 	}
@@ -39,7 +33,6 @@ public class Player extends GameObject{
 		x = Game.clamp((int) x, 0, Game.WIDTH - 38);	
 		y = Game.clamp((int) y, 0, Game.HEIGHT - 66);
 		
-<<<<<<< HEAD
 		handler.addObject(new Trail((int) x, (int) y, ID.Trail, 32, 32, 0.1f, color, handler, false, hud));
 		
 		if(collision()) 
@@ -48,28 +41,15 @@ public class Player extends GameObject{
 		hit();
 		
 		if(handler.coins.size() == 0) handler.addCoin(new Coin((r.nextInt(Game.WIDTH - 38)), (r.nextInt(Game.HEIGHT - 66)), ID.Coin, handler, hud.getMaxLevel(), hud));
-=======
-		handler.addObject(new Trail((int) x, (int) y, ID.Trail, 32, 32, 0.1f, color, handler, false));
-		
-		if(collision()) 
-		
-		handler.addCoin(new Coin((r.nextInt(Game.WIDTH - 38)), (r.nextInt(Game.HEIGHT - 66)), ID.Coin, handler, hud.getMaxLevel()));
-		hit();
-		
-		if(handler.coins.size() == 0) handler.addCoin(new Coin((r.nextInt(Game.WIDTH - 38)), (r.nextInt(Game.HEIGHT - 66)), ID.Coin, handler, hud.getMaxLevel()));
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 	}
 	
 	public void tick() {
 		run();
-<<<<<<< HEAD
 		if(parrying)parryTimer--;
 		if(parryTimer == 0) {
 			parrying = false;
 			parryTimer = 10;
 		}
-=======
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 	}
 
 	public boolean collision() {
@@ -105,11 +85,7 @@ public class Player extends GameObject{
 			
 			GameObject tempObject = handler.object.get(i);
 			
-<<<<<<< HEAD
 			if ((tempObject.getID() == ID.Enemy || tempObject.getID() == ID.SmartEnemy) && !parrying) {
-=======
-			if (tempObject.getID() == ID.Enemy || tempObject.getID() == ID.SmartEnemy) {
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 				
 				if(getBounds().intersects(tempObject.getBounds())) {
 					
@@ -156,7 +132,6 @@ public class Player extends GameObject{
 						else handler.removeObject(this);
 					}
 					handler.removeObject(tempObject);
-<<<<<<< HEAD
 					if (tempObject.getID() == ID.Enemy)handler.addObject(new Enemy(r.nextInt(Game.WIDTH-10), r.nextInt(Game.HEIGHT-10), ID.Enemy, handler, hud));
 					else handler.addObject(new SmartEnemy(r.nextInt(Game.WIDTH-10), r.nextInt(Game.HEIGHT-10), ID.SmartEnemy, handler, hud));
 				}
@@ -270,12 +245,6 @@ if ((tempObject.getID() == ID.Bullet || tempObject.getID() == ID.Enemy) && parry
 		tempObject.velY *= -1;
 	}
 }
-=======
-					if (tempObject.getID() == ID.Enemy )handler.addObject(new Enemy(r.nextInt(Game.WIDTH-10), r.nextInt(Game.HEIGHT-10), ID.Enemy, handler));
-					else handler.addObject(new SmartEnemy(r.nextInt(Game.WIDTH-10), r.nextInt(Game.HEIGHT-10), ID.SmartEnemy, handler));
-				}
-			}
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 		}
 	}
 	
@@ -297,9 +266,5 @@ if ((tempObject.getID() == ID.Bullet || tempObject.getID() == ID.Enemy) && parry
 		}
 		g.fillRect((int) x, (int) y, 32, 32);
 	}
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 }

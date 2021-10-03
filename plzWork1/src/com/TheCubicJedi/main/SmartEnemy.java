@@ -14,8 +14,13 @@
 			private Random r;
 			
 
+<<<<<<< HEAD
 			public SmartEnemy(float x, float y, ID id, Handler handler, HUD hud) {
 				super(x, y, id, handler, hud);
+=======
+			public SmartEnemy(float x, float y, ID id, Handler handler) {
+				super(x, y, id);
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 				
 				r = new Random();
 				
@@ -70,9 +75,13 @@
 					}
 				}
 				
+<<<<<<< HEAD
 				handler.addObject(new Trail((int) x, (int) y, ID.Trail, 20, 20, 0.02f, Color.pink, handler, false, hud));
 				
 				hit();
+=======
+				handler.addObject(new Trail((int) x, (int) y, ID.Trail, 20, 20, 0.02f, Color.pink, handler, false));
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 			}
 
 			public void render(Graphics g) {
@@ -93,6 +102,7 @@
 				return isAlive;
 			}
 			
+<<<<<<< HEAD
 			public void hit() {
 				for(int i = 0; i < handler.object.size(); i++) {
 					
@@ -110,6 +120,9 @@
 				}
 			}
 		}
+=======
+			
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 	}
 
 

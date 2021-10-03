@@ -7,6 +7,7 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.awt.event.KeyAdapter"/>
 <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="java.awt.Rectangle"/>
 <fullyQualifiedTypeName name="java.awt.AlphaComposite"/>
 <fullyQualifiedTypeName name="java.awt.Graphics2D"/>
@@ -19,4 +20,13 @@
 <fullyQualifiedTypeName name="com.TheCubicJedi.main.Game.STATE"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
+=======
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.awt.Graphics"/>
+<fullyQualifiedTypeName name="java.awt.Rectangle"/>
+<fullyQualifiedTypeName name="java.awt.AlphaComposite"/>
+<fullyQualifiedTypeName name="java.awt.Graphics2D"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 </qualifiedTypeNameHistroy>

@@ -65,10 +65,13 @@ public class Player4KeyInput extends KeyAdapter {
 			if(key == KeyEvent.VK_F) keyDown[1]=false; //tempObject.setVelX(0);
 			if(key == KeyEvent.VK_G) keyDown[2]=false; //tempObject.setVelY(0);
 			if(key == KeyEvent.VK_H) keyDown[3]=false; //tempObject.setVelX(0);
+<<<<<<< HEAD
 			if(key == KeyEvent.VK_R) {
 				Player player = (Player) tempObject;
 				player.parrying = true;
 			}
+=======
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 			
 			if(!keyDown[0] && !keyDown[2]) tempObject.setVelY(0);
 			if(!keyDown[1] && !keyDown[3]) tempObject.setVelX(0);

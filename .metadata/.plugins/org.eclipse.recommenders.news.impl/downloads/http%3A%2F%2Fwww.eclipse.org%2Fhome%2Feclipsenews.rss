@@ -9,6 +9,7 @@
       <title>eclipse.org</title>
       <link>http://www.eclipse.org</link>
     </image>
+<<<<<<< HEAD
     <item>
       <title><![CDATA[Close to the Edge]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/mike-milinkovich/close-edge]]></link>
@@ -137,6 +138,8 @@
       <category>news</category>
       <pressrelease>0</pressrelease>
     </item>
+=======
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
      <item>
       <title><![CDATA[Welcome Ivar Grimstad!]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/paul-buck/welcome-ivar]]></link>
@@ -148,7 +151,11 @@
     <item>
       <title><![CDATA[Jakarta Newsletter August 2019: Jakarta EE 8 Preview]]></title>
       <link><![CDATA[https://blogs.eclipse.org/post/gabriela-motroc/jakarta-newsletter-august-2019-jakarta-ee-8-preview]]></link>
+<<<<<<< HEAD
       <description><![CDATA[There's a lot happening in the Jakarta EE ecosystem so if you want to get a richer insight into Jakarta EE, read on.]]></description>
+=======
+      <description><![CDATA[This newsletter puts a spotlight on the present and future of Jakarta EE, the journey to Jakarta EE 8,JakartaOne Livestream and more.]]></description>
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
       <pubDate>Mon, 26 Aug 2019 11:00:00 EST</pubDate>
       <category>news</category>
       <pressrelease>0</pressrelease>

@@ -3,7 +3,12 @@ approved.defs.file.last.changed.time=1567206552000
 configurationInstallLocation=/C\:/Users/pantu/eclipse/java-2018-09/eclipse/
 eclipse.preferences.version=1
 iconcolormode=primary
+<<<<<<< HEAD
 last.download.attempt.time=1577307012474
 lastConfiguration=1577306904417
+=======
+last.download.attempt.time=1567612940930
+lastConfiguration=1567612860793
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 newinstall=true
 workbench.theme=Dark Gray

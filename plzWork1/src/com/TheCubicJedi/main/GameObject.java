@@ -8,10 +8,15 @@ public abstract class GameObject extends Thread{
 	protected float x, y;
 	protected ID id;
 	protected float velX, velY;
+<<<<<<< HEAD
 	protected Handler handler;
 	protected HUD hud;
 	
 	public GameObject(float x, float y, ID id, Handler handler, HUD hud){
+=======
+	
+	public GameObject(float x, float y, ID id){
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
 		this.x = x;
 		this.y = y;
 		this.id = id;

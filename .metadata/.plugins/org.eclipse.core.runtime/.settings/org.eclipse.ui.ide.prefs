@@ -1,5 +1,11 @@
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
+<<<<<<< HEAD
 platformState=1542908671661
 quickStart=false
 tipsAndTricks=false
+=======
+platformState=1542908671616
+quickStart=false
+tipsAndTricks=true
+>>>>>>> 2bab5436040010f2118a3da3893e17bbf2f33128
